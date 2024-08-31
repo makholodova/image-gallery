@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*cd js30#2.2-image-gallery*/
 /*sass --watch assets/scss/main.scss:assets/css/style.css*/
 /*base*/
@@ -342,6 +343,12 @@ input {
   outline: none;
 }
 
+button {
+  background: none; /* Убираем фон */
+  border: none; /* Убираем рамку */
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -390,35 +397,6 @@ header {
 
 .header__logo {
   display: flex;
-}
-
-.search-box {
-  width: 330px;
-}
-@media screen and (max-width: 600px) {
-  .search-box {
-    width: 80%;
-  }
-}
-
-.search-input {
-  width: 100%;
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 25px;
-  border: 1px solid rgb(178, 178, 179);
-}
-.search-input:hover {
-  border: 1px solid rgb(178, 178, 179);
-  box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
-}
-.search-input:focus {
-  border: 1px solid rgb(178, 178, 179);
-  box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
-}
-.search-input:active {
-  border: 1px solid rgb(140, 140, 140);
-  box-shadow: 0px 0px 7px 0.5px rgba(120, 120, 120, 0.8);
 }
 
 .header_line {
@@ -495,5 +473,54 @@ h1 {
 }
 
 /*Components*/
+.search-box {
+  width: 330px;
+}
+@media screen and (max-width: 600px) {
+  .search-box {
+    width: 80%;
+  }
+}
+
+.search-label {
+  display: block;
+  position: relative;
+}
+
+.button__close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16dpx;
+  color: rgba(179, 163, 179, 0.8);
+  transition: color 0.2s ease;
+}
+.button__close:hover {
+  color: rgba(50, 48, 48, 0.8);
+}
+.button__close::before {
+  content: "";
+}
+
+.search-input {
+  width: 100%;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  border: 1px solid rgb(178, 178, 179);
+}
+.search-input:hover {
+  border: 1px solid rgb(178, 178, 179);
+  box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
+}
+.search-input:focus {
+  border: 1px solid rgb(178, 178, 179);
+  box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
+}
+.search-input:active {
+  border: 1px solid rgb(140, 140, 140);
+  box-shadow: 0px 0px 7px 0.5px rgba(120, 120, 120, 0.8);
+}
 
 /*# sourceMappingURL=style.css.map */

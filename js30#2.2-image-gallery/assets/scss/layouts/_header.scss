@@ -15,43 +15,14 @@
   gap: 15px;
   font-size: 24px;
   padding: 15px;
-  @include phones{
-   
+  @include phones {
+
     justify-content: center;
   }
 }
-.header__logo{
+
+.header__logo {
   display: flex;
-}
-
-.search-box {
-  width: 330px;
-  @include phones{
-    width: 80%;
-  }
-}
-
-.search-input {
-  width: 100%;
-  font-size: 14px;
-  padding: 8px 12px;
-  border-radius: 25px;
-  border: 1px solid rgb(178, 178, 179);
-
-  &:hover {
-    border: 1px solid rgb(178, 178, 179);
-    box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
-  }
-
-  &:focus {
-    border: 1px solid rgb(178, 178, 179);
-    box-shadow: 0px 0px 7px 0.5px rgba(179, 163, 179, 0.8);
-  }
-
-  &:active {
-    border: 1px solid rgb(140, 140, 140); 
-    box-shadow: 0px 0px 7px 0.5px rgba(120, 120, 120, 0.8);
-  }
 }
 
 .header_line {

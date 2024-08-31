@@ -380,3 +380,9 @@ button {
 input {
    outline: none;
 }
+
+button {
+  background: none; /* Убираем фон */
+  border: none; /* Убираем рамку */
+  outline: none;
+}
