@@ -1,0 +1,17 @@
+﻿/*cd js30#2.2-image-gallery*/
+/*sass --watch assets/scss/main.scss:assets/css/style.css*/
+@import "abstract/variables";
+@import "abstract/mixins";
+/*base*/
+@import "base/normalize";
+@import "base/base";
+/*layouts*/
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/image-gallery";
+/*Components*/
+@import "components/buttons";
+@import "components/search";
+
+
+

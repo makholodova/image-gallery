@@ -1,0 +1,30 @@
+﻿.footer {
+  background: $background-color;
+  background: $primary-gradient;
+  padding: 15px;
+  font-size: 16px;
+  color: $primary;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include phones {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+}
+
+.footer-link {
+  color: $primary;
+  display: flex;
+  align-items: center;
+}
+
+.footer-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
