@@ -10,11 +10,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @include phones{
+  @include phones {
     flex-direction: column;
     row-gap: 15px;
   }
-  
+
 }
 
 .footer-link {
@@ -24,5 +24,7 @@
 }
 
 .footer-icon {
+  width: 32px;
+  height: 32px;
   margin-right: 10px;
 }

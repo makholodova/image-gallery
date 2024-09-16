@@ -385,11 +385,11 @@ header {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 10px;
   font-size: 24px;
   padding: 15px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .header-container {
     justify-content: center;
   }
@@ -397,6 +397,13 @@ header {
 
 .header__logo {
   display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-img {
+  width: 64px;
+  height: 64px;
 }
 
 .header_line {
@@ -418,7 +425,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .footer-container {
     flex-direction: column;
     row-gap: 15px;
@@ -432,6 +439,8 @@ header {
 }
 
 .footer-icon {
+  width: 32px;
+  height: 32px;
   margin-right: 10px;
 }
 
@@ -446,7 +455,7 @@ main {
 
 h1 {
   font-size: 28px;
-  color: rgba(243, 190, 232, 0.91);
+  color: rgba(31, 94, 72, 0.93);
 }
 
 .gallery {
@@ -476,7 +485,7 @@ h1 {
 .search-box {
   width: 330px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
   .search-box {
     width: 80%;
   }
